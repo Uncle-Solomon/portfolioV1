@@ -70,7 +70,7 @@ export default function Home() {
             <AiFillLinkedin />
             <AiFillInstagram />
           </div>
-          <div className="relative rounded-full w-60 h-60 mt-10 mx-auto overflow-hidden pb-10 md:h-96 md:w-96">
+          <div className="relative rounded-full w-60 h-60 mt-10 mx-auto overflow-hidden pb-10 md:h-96 md: mb-10 md:w-96">
             <Image src={first} layout="fill" objectFit="cover" />
           </div>
         </section>
