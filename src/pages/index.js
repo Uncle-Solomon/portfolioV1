@@ -71,13 +71,37 @@ export default function Home() {
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-            <AiFillTwitterCircle />
-            <AiFillGithub />
-            <AiFillLinkedin />
-            <AiFillInstagram />
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://twitter.com/uncle_solomon"
+            >
+              <AiFillTwitterCircle />
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/Uncle-Solomon"
+            >
+              <AiFillGithub />
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/ameh-solomon-onyeke-a69874162/"
+            >
+              <AiFillLinkedin />
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.instagram.com/uncle_soyo/"
+            >
+              <AiFillInstagram />
+            </a>
           </div>
           <div className="relative rounded-full w-60 h-60 mt-10 mx-auto overflow-hidden pb-10 md:h-96 md: mb-10 md:w-96">
-            <Image src={second} layout="fill" objectFit="cover" />
+            <Image src={second} fill cover />
           </div>
         </section>
         {/* Another Section */}
@@ -107,8 +131,8 @@ export default function Home() {
               />
               <h3 className="text-lg font-medium pt-8 pb-2">FrontEnd</h3>
               <p className="py-2">
-                Bringing designs to life with the use of recent frontend
-                frameworks and packages.
+                Bringing expert user interface and experience designs to life
+                with the use of recent frontend frameworks and packages.
               </p>
               <h4 className="py-4 text-teal-600">Tools and Frameworks I use</h4>
               <p className="text-gray-700 py-1">ReactJS</p>
@@ -125,7 +149,7 @@ export default function Home() {
               <h3 className="text-lg font-medium pt-8 pb-2">Backend</h3>
               <p className="py-2">
                 Developing architecture that would support your application;
-                Integrating APIs, Databases and Authentication
+                Integrating APIs, Databases and Authentication.
               </p>
               <h4 className="py-4 text-teal-600">Tools and Frameworks I use</h4>
               <p className="text-gray-700 py-1">NodeJs</p>
