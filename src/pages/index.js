@@ -107,8 +107,8 @@ export default function Home() {
               />
               <h3 className="text-lg font-medium pt-8 pb-2">FrontEnd</h3>
               <p className="py-2">
-                Creating elegant designs suited for your needs following core
-                design theory
+                Bringing designs to life with the use of recent frontend
+                frameworks and packages.
               </p>
               <h4 className="py-4 text-teal-600">Tools and Frameworks I use</h4>
               <p className="text-gray-700 py-1">ReactJS</p>
@@ -124,8 +124,8 @@ export default function Home() {
               />
               <h3 className="text-lg font-medium pt-8 pb-2">Backend</h3>
               <p className="py-2">
-                Creating elegant designs suited for your needs following core
-                design theory
+                Developing architecture that would support your application;
+                Integrating APIs, Databases and Authentication
               </p>
               <h4 className="py-4 text-teal-600">Tools and Frameworks I use</h4>
               <p className="text-gray-700 py-1">NodeJs</p>
@@ -138,8 +138,8 @@ export default function Home() {
                 AI / Machine Learning
               </h3>
               <p className="py-2">
-                Creating elegant designs suited for your needs following core
-                design theory
+                Creating models and exploring solutions that can be deployed
+                through the use fo machine learning techniques.
               </p>
               <h4 className="py-4 text-teal-600">Tools and Frameworks I use</h4>
               <p className="text-gray-700 py-1">Jupyter Notebook</p>
@@ -164,7 +164,7 @@ export default function Home() {
                 className="rounded-lg object-cover "
                 width={"100%"}
                 height={"100%"}
-                layout="responsive"
+                alt=""
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -173,7 +173,7 @@ export default function Home() {
                 className="rounded-lg object-cover "
                 width={"100%"}
                 height={"100%"}
-                layout="responsive"
+                alt=""
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -182,7 +182,7 @@ export default function Home() {
                 className="rounded-lg object-cover "
                 width={"100%"}
                 height={"100%"}
-                layout="responsive"
+                alt=""
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -191,7 +191,7 @@ export default function Home() {
                 className="rounded-lg object-cover "
                 width={"100%"}
                 height={"100%"}
-                layout="responsive"
+                alt=""
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -200,7 +200,7 @@ export default function Home() {
                 className="rounded-lg object-cover "
                 width={"100%"}
                 height={"100%"}
-                layout="responsive"
+                alt=""
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -209,7 +209,7 @@ export default function Home() {
                 className="rounded-lg object-cover "
                 width={"100%"}
                 height={"100%"}
-                layout="responsive"
+                alt=""
               />
             </div>
           </div>
