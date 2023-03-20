@@ -17,7 +17,6 @@ import web3 from "../../public/web3.png";
 import web4 from "../../public/web4.png";
 import web5 from "../../public/web5.png";
 import web6 from "../../public/web6.png";
-import resume from "../../public/first.png";
 import React from "react";
 
 import { useState } from "react";
@@ -101,7 +100,7 @@ export default function Home() {
             </a>
           </div>
           <div className="relative rounded-full w-60 h-60 mt-10 mx-auto overflow-hidden pb-10 md:h-96 md: mb-10 md:w-96">
-            <Image src={second} fill cover />
+            <Image src={second} fill />
           </div>
         </section>
         {/* Another Section */}
@@ -154,6 +153,7 @@ export default function Home() {
               <h4 className="py-4 text-teal-600">Tools and Frameworks I use</h4>
               <p className="text-gray-700 py-1">NodeJs</p>
               <p className="text-gray-700 py-1">Python Flask</p>
+              <p className="text-gray-700 py-1">MongoDB | PostgreSQL</p>
               <p className="text-gray-700 py-1">PostMan</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
@@ -169,7 +169,6 @@ export default function Home() {
               <p className="text-gray-700 py-1">Jupyter Notebook</p>
               <p className="text-gray-700 py-1">Python</p>
               <p className="text-gray-700 py-1">Scikit Learn</p>
-              <p className="text-gray-700 py-1">TensorFlow</p>
             </div>
           </div>
         </section>
