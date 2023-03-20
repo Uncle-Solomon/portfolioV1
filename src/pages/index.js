@@ -7,22 +7,28 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import Image from "next/image";
-import first from "../../public/first.png";
-import design from "../../public/design.png";
-import code from "../../public/code.png";
-import consulting from "../../public/consulting.png";
+import second from "../../public/second.jpg";
+import frontend from "../../public/frontend.jpg";
+import backend from "../../public/backend.jpg";
+import AI from "../../public/AI2.jpg";
 import web1 from "../../public/web1.png";
 import web2 from "../../public/web2.png";
 import web3 from "../../public/web3.png";
 import web4 from "../../public/web4.png";
 import web5 from "../../public/web5.png";
 import web6 from "../../public/web6.png";
+import resume from "../../public/first.png";
 import React from "react";
 
 import { useState } from "react";
+import useDownloader from "react-use-downloader";
+
+const fileUrl = "/AmehSolomonOnyekeResume.pdf";
+const fileName = "Ameh Solomon Onyeke";
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const { download } = useDownloader();
+  const [darkMode, setDarkMode] = useState(true);
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -43,12 +49,12 @@ export default function Home() {
                 />
               </li>
               <li>
-                <a
+                <button
                   className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="#"
+                  onClick={() => download(fileUrl, fileName)}
                 >
                   Resume
-                </a>
+                </button>
               </li>
             </ul>
           </nav>
@@ -71,7 +77,7 @@ export default function Home() {
             <AiFillInstagram />
           </div>
           <div className="relative rounded-full w-60 h-60 mt-10 mx-auto overflow-hidden pb-10 md:h-96 md: mb-10 md:w-96">
-            <Image src={first} layout="fill" objectFit="cover" />
+            <Image src={second} layout="fill" objectFit="cover" />
           </div>
         </section>
         {/* Another Section */}
@@ -94,10 +100,10 @@ export default function Home() {
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white ">
               <Image
-                src={design}
+                src={frontend}
                 className="mx-auto"
-                width={100}
-                height={100}
+                width={150}
+                height={150}
               />
               <h3 className="text-lg font-medium pt-8 pb-2">FrontEnd</h3>
               <p className="py-2">
@@ -110,7 +116,12 @@ export default function Home() {
               <p className="text-gray-700 py-1">HTML</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-              <Image src={code} className="mx-auto" width={100} height={100} />
+              <Image
+                src={backend}
+                className="mx-auto"
+                width={100}
+                height={100}
+              />
               <h3 className="text-lg font-medium pt-8 pb-2">Backend</h3>
               <p className="py-2">
                 Creating elegant designs suited for your needs following core
@@ -122,12 +133,7 @@ export default function Home() {
               <p className="text-gray-700 py-1">PostMan</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-              <Image
-                src={consulting}
-                className="mx-auto"
-                width={100}
-                height={100}
-              />
+              <Image src={AI} className="mx-auto" width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">
                 AI / Machine Learning
               </h3>
