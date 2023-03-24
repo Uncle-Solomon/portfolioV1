@@ -6,6 +6,8 @@ import {
   AiFillGithub,
   AiFillInstagram,
 } from "react-icons/ai";
+import { FaReact } from "react-icons/fa";
+import { DiJavascript } from "react-icons/di";
 import Image from "next/image";
 import second from "../../public/second.jpg";
 import frontend from "../../public/frontend.jpg";
@@ -134,9 +136,15 @@ export default function Home() {
                 with the use of recent frontend frameworks and packages.
               </p>
               <h4 className="py-4 text-teal-600">Tools and Frameworks I use</h4>
-              <p className="text-gray-700 py-1">ReactJS</p>
-              <p className="text-gray-700 py-1">JavaScript</p>
+              <p className="text-gray-700 py-1 grid-cols-2">
+                ReactJS <FaReact className="inline-block items-center ml-1" />
+              </p>
+              <p className="text-gray-700 py-1">
+                JavaScript{" "}
+                <DiJavascript className="inline-block items-center ml-1" />
+              </p>
               <p className="text-gray-700 py-1">HTML</p>
+              <p className="text-gray-700 py-1">TailWind Css</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image
